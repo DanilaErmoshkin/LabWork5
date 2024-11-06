@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <header class="align-right" href="ZK-LW1.html" href="page2.html">
+        <div class="header" style="margin-right: 2%;">
+            <a href="ZK-LW1.html">Основаная страница</a>
+            <a href="page2.html">Позиционирование элемента</a>
+            <a href="table.html">Таблица</a>
+        </div>
+    </header>
+    <head>
+        <link href="table.css" rel="stylesheet" />
+    </head>
+    <body class="colorBack">
+        <form id="form">
+            <div class="contentRight">
+                <div>
+                    <label for="fname">№ п/п:</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="model">Модель:</label><br>
+                    <input type="text" id="model" name="model" value=""><br>
+                    <label for="name">Название:</label><br>
+                    <input type="text" id="name" name="name" value=""><br>
+                    <label for="discription">Описание:</label><br>
+                    <input type="text" id="discription" name="discription" value=""><br>
+
+                    <input type="submit" value="Отправить" style="margin-top: 20px; padding: 5px;" onclick="add()">
+                </div>
+            </div>
+        </form>
+        <script>
+            document.getElementById('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const fname = this.fname.value;
+                const model = this.model.value;
+                const name = this.name.value;
+                const discription = this.discription.value;
+
+                const newRow = document.createElement('tr');
+                const fnameCell = document.createElement('td');
+                const modelCell = document.createElement('td');
+                const nameCell = document.createElement('td');
+                const discriptionCell = document.createElement('td');
+
+                fnameCell.textContent = fname;
+                modelCell.textContent = model;
+                nameCell.textContent = name;
+                discriptionCell.textContent = discription;
+
+                newRow.appendChild(fnameCell);
+                newRow.appendChild(modelCell);
+                newRow.appendChild(nameCell);
+                newRow.appendChild(discriptionCell);
+
+                newRow.classList.add('colorLine');
+
+                document.querySelector('#dataTable tbody').appendChild(newRow);
+
+                this.reset();
+            });
+        </script>
+        <div>
+            <table id="dataTable" style="width: 70%;" class="table">
+                <caption class="textSize" style="padding: 10px;">Модели у которых зафиксирован сбой:</caption>
+                <tr class="colorHead" style="height: 70px;">
+                  <th style="width:50px;">№ п/п</th>
+                  <th>Модель</th>
+                  <th>Название</th>
+                  <th>Описание</th>
+                </tr>
+                <tr class="colorLine">
+                  <td >1</td>
+                  <td>МА-9</td>
+                  <td>Беляш</td>
+                  <td style="height: 100px;">Крупногабаритный робот, использующийся для монтажных и слесарно-сварочных работ металлоконструкций на различных отвесных высотах.</td>
+                </tr>
+                <tr class="colorLine">
+                  <td>2</td>
+                  <td>БР-1</td>
+                  <td>Бурав</td>
+                  <td style="height: 100px;">Гигантский тоннельно-проходческий робот для изменения ландшафта.</td>
+                </tr>
+                <tr class="colorRed">
+                    <td>3</td>
+                    <td>ЕЖХ-7</td>
+                    <td>Ежиха</td>
+                    <td style="height: 100px;">Горный разведывательный робот.</td>
+                </tr>
+                <tr class="colorBlue">
+                    <td>4</td>
+                    <td>РАФ</td>
+                    <td>Рафик</td>
+                    <td style="height: 100px;">Робот-инженер, часто используется на предприятиях и заводах по всему Советскому Союзу.</td>
+                </tr>
+                <tr class="colorLine">
+                    <td>5</td>
+                    <td>ВОВ-А6</td>
+                    <td>Вовчик</td>
+                    <td style="height: 100px;">Универсальный гуманоидный робот-помощник, в основном используется в лабораториях Предприятия.</td>
+                </tr>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </body>    
+</html>

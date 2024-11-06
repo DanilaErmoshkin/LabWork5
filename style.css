@@ -1,0 +1,132 @@
+.body{
+    background: #CDAA7D;
+    
+}
+.blue{
+    color: rgb(45, 45, 177);
+}
+.bigRed{
+    color: rgb(255, 0, 0);
+    font-size: 1em;
+}
+.bigSize{
+    font-size: 1.2em;
+}
+.contentLeft{
+    border: solid;
+    border-color: #CDAA7D;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding: 20px;
+    font-size: 1.5em;
+    background:  #FAF3E0;
+}
+.contentRight{
+    border: solid;
+    border-color: #CDAA7D;
+    border-radius: 30px;
+    padding: 20px;
+    background-color:  #FAF3E0;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin: 2%;
+}
+.align-right {
+    border: solid;
+    border-color: #F5DEB3;
+    border-radius: 30px;
+    text-align: right;
+    width:100%;
+    background: #F5DEB3;
+}
+.container{
+    background-color: #CDAA7D;
+    height:500px;
+}
+.block{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
+.block_gif{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    height: 245px;
+    width: 200px;
+}
+.container-2{
+    background-color: #CDAA7D;
+    height:500px;
+    display: flex; 
+    align-items: center;
+}
+.block-2{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.container-3{
+    background-color: #CDAA7D;
+    border:solid;
+    border-radius:2px;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block-3{ 
+    background-color: #00FF7F;
+    display: flex; 
+    margin: auto;
+    margin-top:10px;
+    height: 200px;
+    width: 200px;
+}
+.element {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black; 
+}
+.element1{
+    height: 200px;
+    width: 200px;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+.element2{
+    height: 200px;
+    width: 200px;
+    top: 100px;
+    left: 100px; 
+    background-color: gold;
+}
+.element3{
+    height: 200px;
+    width: 200px;
+    top: 200px;
+    left: 200px; 
+    background-color: white;
+}
+.container-4{
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.positionfix{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,45 @@
+.align-right {
+    border: solid;
+    border-color: #F5DEB3;
+    border-radius: 30px;
+    text-align: right;
+    width:100%;
+    background: #F5DEB3;
+}
+.textSize{
+    font-size: 30px;
+}
+.table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table th,
+.table td {
+    border: 1px solid #000; /* Рамка для ячеек */
+    padding: 8px; 
+    text-align: center;
+}
+.colorBack{
+    background-color: #E3CDAA;
+    color: #4B3C2A;
+}
+.colorHead{
+    background-color: #B29F85;
+}
+.colorRed{
+    background-color: #D99A8E ;
+}
+.colorBlue{
+    background-color: #B8D5E7;
+}
+.colorLine{
+    background-color: #EDE3D6 ;
+}
+
+.contentRight{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #f1f1f1; 
+    padding: 40px; 
+}
